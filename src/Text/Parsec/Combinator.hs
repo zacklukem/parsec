@@ -240,7 +240,7 @@ chainl1 p op        = do{ x <- p; rest x }
                                     }
                                 <|> return x
 
--- | @chainr1 p op x@ parses /one/ or more occurrences of |p|,
+-- | @chainr1 p op@ parses /one/ or more occurrences of |p|,
 -- separated by @op@ Returns a value obtained by a /right/ associative
 -- application of all functions returned by @op@ to the values returned
 -- by @p@.
